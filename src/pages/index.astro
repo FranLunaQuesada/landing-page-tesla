@@ -1,0 +1,42 @@
+---
+import LandingHeader from "../components/LandingHeader.astro";
+import HeroSection from "../components/HeroSection.astro";
+import ModelY from "../components/ModelY.astro";
+import Model3 from "../components/Model3.astro";
+import ModelS from "../components/ModelS.astro";
+import ModelX from "../components/ModelX.astro";
+import PowerWall from "../components/PowerWall.astro";
+import Charge from "../components/Charge.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Tesla, acercando el futuro.">
+  <LandingHeader />
+
+  <main
+    class="snap-y snap-mandatory relative w-full h-screen overflow-auto scroll-smooth"
+  >
+    <!-- Con esto, lo que hemos hecho es hacer que el scroll se haga sobre el contenedor, no sobre la página, haciendo que el alto sea el de la pantalla. Es necesario para que funcione la manera de los sliders que vamos a hacer -->
+    <div class="snap-center">
+      <HeroSection />
+    </div>
+    <div class="snap-center">
+      <ModelY />
+    </div>
+    <div class="snap-center">
+      <Model3 />
+    </div>
+    <div class="snap-center">
+      <ModelS />
+    </div>
+    <div class="snap-center">
+      <ModelX />
+    </div>
+    <div class="snap-center">
+      <PowerWall />
+    </div>
+    <div class="snap-center">
+      <Charge />
+    </div>
+  </main>
+</Layout>
